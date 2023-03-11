@@ -1,0 +1,33 @@
+using System;
+
+class Program 
+{
+  public static void Main (string[] args) 
+  {
+    int pacotesR;
+
+    
+    Console.WriteLine("Controle de estoque!");
+    Console.WriteLine("Informe a quantidade de pacotes de ração:     ");
+    
+    pacotesR = int.Parse(Console.ReadLine());
+
+    if(pacotesR > 100)
+    {
+      Console.WriteLine("As unidades do seu estoque ultrapassam 100.");
+      
+    }
+
+    if(pacotesR >= 50 && pacotesR <= 100)
+    {
+      Console.WriteLine("ALERTA! Quantidade entre 50 a 100.");
+    }
+
+    if(pacotesR < 50)
+    {
+      Console.WriteLine("QUANTIDADE ABAIXO DO IDEAL!");
+    }
+    
+    
+  }
+}
